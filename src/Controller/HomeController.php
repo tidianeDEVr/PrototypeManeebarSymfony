@@ -32,7 +32,7 @@ class HomeController extends AbstractController
         ]);
     }
 
-    #[Route('/contacts', name: 'contacts')]
+    #[Route('/contacts', name: 'nous_contacter')]
     public function showContacts(): Response
     {
         return $this->render('home/contacts.html.twig', [

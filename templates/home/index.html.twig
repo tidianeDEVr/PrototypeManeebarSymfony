@@ -1,7 +1,219 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page d'acceuil !{% endblock %}
-
 {% block body %}
-    
+    {# Hero Section Start #}
+    <section class='section-hero'>
+        <div class='rows row-col-1 row-cols-md-2 mx-auto container'>
+            <div class='section-hero-left ' style='height:600px;'>
+                <div class='left-container h-50 '>
+                    <h3 class=''>A l’écoute de vos besoins</h3>
+                    <p class='my-5'>
+                        Nous vous facilitons la tache en mettant à votre<br>
+                        service des ouvriers professionnels adaptés à vos<br>
+                        attentes et à vos souhaits.
+                    </p> 
+                    <a href='#' class='btn btn-light'>Contactez-Nous</a>
+                </div>
+            </div>
+            <div class='section-hero-right h-100'></div>
+        </div>
+    </section>
+    {# Hero Section End #}
+
+    {# How It Works Section Start #}
+    <section class='section-how-it-works  container pb-5'>
+        <h2 class='mt-5 text-center'> Une réparation Rapide, Efficace & Economique </h2>
+        <div class='my-3 sub-title text-center'> 
+            <h6> Comment ça marche ? </h6>
+            <i class="fa-solid fa-arrow-down-long"></i>
+        </div>
+        <div class='hiw-container mt-2 row'>
+            <div class='hiw-card col row mx-2 py-3'>
+                <div class='hiw-card-left col-4 d-flex justify-content-center align-items-center'>
+                    <img src="{{asset('assets/images/illustrations/money.png')}}" alt='payer apres rv'>
+                </div>
+                <div class='hiw-card-right col-8 d-flex flex-column justify-content-around'>
+                    <h4>Payez après votre rendez-vous</h4>
+                    <p>Vous ne payez qu’après le passage de notre réparateur.</p>
+                </div>
+            </div>
+            <div class='hiw-card col row mx-2 py-3'>
+                <div class='hiw-card-left col-4 d-flex justify-content-center align-items-center'>
+                    <img src="{{asset('assets/images/illustrations/arrow.png')}}" alt='annulation gratuite'>
+                </div>
+                <div class='hiw-card-right col-8 d-flex flex-column justify-content-around'>
+                    <h4>Annulation Gratuite</h4>
+                    <p>Annulation gratuite jusqu'à 24h avant l'intervention avec un remboursement intégral</p>
+                </div>
+            </div>
+            <div class='hiw-card col row mx-2 py-3'>
+                <div class='hiw-card-left col-4 d-flex justify-content-center align-items-center'>
+                    <img src="{{asset('assets/images/illustrations/calendar.png')}}" alt='annulation gratuite'>
+                </div>
+                <div class='hiw-card-right col-8 d-flex flex-column justify-content-around'>
+                    <h4>Créneau</h4>
+                    <p>Choisissez le jour et l'heure de votre intervention en quelques clics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# How It Works Section End #}
+
+    {# Stop Covid Section Start #}
+    <section class='section-stop-covid mt-5'>
+        <div class='container row row-cols-1 row-cols-md-2'>
+            <div class='stop-covid-left position-relative'>
+                <img src="{{asset('assets/images/stop_covid.png')}}" alt='stop covid illustration' class='position-absolute'>
+            </div>
+            <div class='stop-covid-right text-center'>
+                <h3 class='mt-5'><span>Stop</span> Covid 19 !!!</h3>
+                <p class='mt-5'>
+                    Parce que la satisfaction de vos<br> besoins passe par votre <br>
+                    Bien-etre.
+                </p>
+            </div>
+        </div>
+    </section>
+    {# Stop Covid Section End #}
+
+    {# Our Services Section Start  #}
+    <section class='section-our-services'>
+        <h3 class='text-center mt-5'>Nos Services</h3>
+        <div class='container mx-auto row row-cols-1 row-cols-md-2 g-4 my-5'>
+            <div class='col'>
+                <div class='service-card d-flex'>
+                    <div class='service-card-left'>
+                        <img class='rounded' width='150px' src="{{asset('assets/images/informaticien.png')}}" alt='service illustration'>
+                    </div>
+                    <div class='service-card-right mx-5'>
+                        <h4>Informatique</h4>
+                        <p>
+                            Lorem ipsum is placeholder 
+                            text commonly used in the
+                            graphic, print, and publishing 
+                            industries for previewing 
+                            layouts and visual mockups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class='col'>
+                <div class='service-card d-flex'>
+                    <div class='service-card-left'>
+                        <img class='rounded' width='150px' src="{{asset('assets/images/plombier.png')}}" alt='service illustration'>
+                    </div>
+                    <div class='service-card-right mx-5'>
+                        <h4>Plomberie</h4>
+                        <p>
+                            Lorem ipsum is placeholder 
+                            text commonly used in the
+                            graphic, print, and publishing 
+                            industries for previewing 
+                            layouts and visual mockups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='col'>
+                <div class='service-card d-flex'>
+                    <div class='service-card-left'>
+                        <img class='rounded' width='150px' src="{{asset('assets/images/menusier.png')}}" alt='service illustration'>
+                    </div>
+                    <div class='service-card-right mx-5'>
+                        <h4>Menuiserie</h4>
+                        <p>
+                            Lorem ipsum is placeholder 
+                            text commonly used in the
+                            graphic, print, and publishing 
+                            industries for previewing 
+                            layouts and visual mockups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='col'>
+                <div class='service-card d-flex'>
+                    <div class='service-card-left'>
+                        <img class='rounded' width='150px' src="{{asset('assets/images/electricien.png')}}" alt='service illustration'>
+                    </div>
+                    <div class='service-card-right mx-5'>
+                        <h4>Electricité</h4>
+                        <p>
+                            Lorem ipsum is placeholder 
+                            text commonly used in the
+                            graphic, print, and publishing 
+                            industries for previewing 
+                            layouts and visual mockups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    {# Our Services Section End  #}
+
+    {# Clients Reviews Section Start #}
+    {# <section class='section-clients-reviews'>
+        <h3 class='text-center my-5'>Avis Clients</h3>
+        <div class='reviews-container'>
+            <div class='reviews-card bg-success'>
+                1111111
+            </div>
+            <div class='reviews-card bg-danger'>
+                2222222
+            </div>
+            <div class='reviews-card bg-primary'>
+                3333333
+            </div>
+            <div class='reviews-card bg-success'>
+                1111111
+            </div>
+            <div class='reviews-card bg-danger'>
+                2222222
+            </div>
+            <div class='reviews-card bg-primary'>
+                3333333
+            </div>
+        </div>
+    </section> #}
+    {# Clients Reviews Section End #}
+
+    {# Comments Section Start #}
+    <section class='section-comments'>
+        <h3 class='text-center py-5'>Laisser un commentaire</h3>
+        <form class='container pb-5'>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nom complet</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cheikh Tidiane Ndiaye">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xyz@mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Commentaire</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <a class='btn btn-light' href='#' type='submit'>Soumettre</a>
+        </form>
+    </section>
+    {# Comments Section End #}
+
+    {# Join Us Section Start #}
+    <section class='section-join-us'>
+        <h3 class='text-center py-5'>Rejoignez le mouvement sur les réseaux</h3>
+        <div class='join-container container pb-5'>
+            <img src="{{asset('assets/images/man.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/woman.png')}}" alt='join-us' class='p-2' >
+            <img src="{{asset('assets/images/machine.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/man.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/woman.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/machine.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/man.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/woman.png')}}" alt='join-us' class='p-2'>
+            <img src="{{asset('assets/images/machine.png')}}" alt='join-us' class='p-2'>
+        </div>
+    </section>
+    {# Join Us Section End #}
 {% endblock %}

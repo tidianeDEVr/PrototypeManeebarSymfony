@@ -1,0 +1,181 @@
+:root {
+    /* Declarations des couleurs a utiliser */
+    --light-blue: #4597e6;
+    --mauve: #42313A;
+    --orange: #EE9846;
+    --gray: #C5CEDF;
+    --brown: #844F37;
+}
+
+/* Declarations des fonts TTF */
+@font-face {
+    font-family: 'berlin-sans-fb';
+    src: url(../fonts/berlin-sans-fb.ttf);
+}
+@font-face {
+    font-family: 'satisfy-regular';
+    src: url(../fonts/satisfy-regular.ttf);
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'berlin-sans-fb';
+}
+
+/* Header Styling Start  */
+.nav-link{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+.nav-link:hover{
+    color: var(--light-blue);
+}
+/* Header Styling End  */
+
+/* HOME PAGE */
+/* Hero Section Styling Start */
+.section-hero{
+    min-height: 600px;
+    background-image: url(../images/hero_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-hero .rows{
+    height: 100%;
+}
+.section-hero .section-hero-left{
+    height: 100%;
+    /* width: 35%; */
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-hero h3{
+    font-family: 'satisfy-regular';
+    color: white;
+    font-size: 40px;
+}
+.section-hero p{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.section-hero a{
+    width: 200px;
+}
+/* Hero Section Styling End */
+
+/* How It Works Section Styling Start */
+.section-how-it-works h2,
+.section-stop-covid .container .stop-covid-right h3,
+.section-our-services h3,
+.section-clients-reviews h3,
+.section-comments h3,
+.section-join-us h3,
+.section-our-services .container .service-card .service-card-right h4,
+.section-how-it-works .hiw-container .hiw-card .hiw-card-right h4
+{
+    font-family: 'satisfy-regular';
+    color: var(--light-blue);
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section-how-it-works .sub-title h6{
+    font-weight: 700;
+    font-size: 20px;
+}
+.section-how-it-works .sub-title i{
+    color: var(--light-blue);
+}
+.section-how-it-works .hiw-container .hiw-card,
+.section-our-services .container .service-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 7px;
+}
+.section-how-it-works .hiw-container .hiw-card .hiw-card-right *{
+    text-align: center;
+}
+.section-how-it-works .hiw-container .hiw-card .hiw-card-right h4{
+    font-size: 25px;
+}
+.section-how-it-works .hiw-container .hiw-card .hiw-card-right p{
+    font-size: 18px;
+}
+/* How It Works Section Styling End */
+
+/* Stop Covid Section Styling Start  */
+.section-stop-covid{
+    min-height: 400px;
+    background-color: var(--light-blue);
+}
+.section-stop-covid .container .stop-covid-left{
+    left: -20px;
+    bottom: 98px;
+}
+.section-stop-covid .container .stop-covid-right h3{
+    color: #fff;
+}
+.section-stop-covid .container .stop-covid-right span{
+    color: red;
+}
+.section-stop-covid .container .stop-covid-right p{
+    font-size:  25px;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Stop Covid Section Styling End  */
+
+/* Our Services Section Styling Start  */
+.section-our-services h3, 
+.section-clients-reviews h3{
+    color: #000;
+}
+.section-our-services .container .service-card{
+    padding: 10px;
+}
+/* Our Services Section Styling End  */
+
+/* Clients Reviews Section Styling Start  */
+
+/* Clients Reviews Section Styling End  */
+
+/* Comment Section Styling Start */
+.section-comments{
+    background-color: var(--light-blue);
+}
+.section-comments h3,
+.section-join-us h3{
+    color: #000;
+}
+.section-comments input,
+.section-comments textarea{
+    background-color: #f6f6f6;
+}
+/* Comment Section Styling End */
+
+/* Footer Styling Start */
+footer{
+    background-color: #000;
+}
+footer .copyright,
+footer .mentions,
+footer a {
+    color: #fff;
+}
+footer .footer-middle{
+    width: 80%;
+    border: 1px solid;
+    border-color: var(--light-blue);
+    border-radius: 7px;
+}
+footer .footer-middle .logos-container .logos i{
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Footer Styling End */
