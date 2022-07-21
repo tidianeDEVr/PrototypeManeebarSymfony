@@ -141,7 +141,23 @@ body {
 /* Our Services Section Styling End  */
 
 /* Clients Reviews Section Styling Start  */
+.section-clients-reviews{
+    background-color: #f6f6f6;
+}
 
+.section-clients-reviews .reviews-container{
+    margin: 0 auto;
+}
+.section-clients-reviews .reviews-container .reviews-card{
+    background-color: #fff;
+    border-radius: 15px;
+}
+.section-clients-reviews .reviews-container .reviews-card .reviews-infos p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+} 
 /* Clients Reviews Section Styling End  */
 
 /* Comment Section Styling Start */
