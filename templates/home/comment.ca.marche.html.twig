@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comment ca marche{% endblock %}
+
+{% block body %}
+    {# First How It Works Section Start #}
+    <section class='first-section-how-it-works'>
+        <div class='first-hiw-container d-flex align-items-end'>
+            <div class='container text-center'>
+                <h3 class='mb-3'>Comment ça marche ?</h3>
+                <p class='mb-5'>
+                    Une réparation, ça fonctionne par étape. On vous explique tout. (mais<br> vite fait, on sait que vous avez plein de choses à faire)
+                </p>
+            </div>
+        </div>
+    </section>
+    {# First How It Works Section End #}
+
+    {#  Contacts Us Section Start  #}
+    <section class='section-contacts-us'>
+        <div class='arrow-container d-flex justify-content-center mb-5'>
+            <img src='{{asset('assets/images/illustrations/hiw-arrow.png')}}' alt='arrow'> 
+        </div>
+        <div class='call-to-action container  pt-5 mb-5'>
+            <div class='row row-cols-md-2'>
+                <div class='cta-left d-flex align-items-center'>
+                    <div>
+                        <h3>Contactez-nous.</h3>
+                        <h4 class='mb-5'>Dites-nous comment nous pouvons vous aider.</h4>
+                        <a class='btn btn-lg btn-light'>Nous contacter</a>
+                    </div>
+                </div>
+                <div class='cta-right d-flex align-items-center'>
+                    <div class='cta-r-btn d-flex justify-content-center align-items-center'>
+                        <div class='cta-r-btn-cont d-flex justify-content-center align-items-center'>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <section>
+    {#  Contacts Us Section End  #}
+
+    {# Choose Date Section Start #}
+    <section class=''>
+    </section>
+    {# Choose Date Section End #}
+
+
+{% endblock %}

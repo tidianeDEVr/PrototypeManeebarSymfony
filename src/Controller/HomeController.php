@@ -39,4 +39,12 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+    #[Route('/comment-ca-marche', name: 'comment_ca_marche')]
+    public function showHowItWorks(): Response
+    {
+        return $this->render('home/comment.ca.marche.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
