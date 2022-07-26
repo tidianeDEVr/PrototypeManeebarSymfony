@@ -71,14 +71,20 @@ body {
 /* Hero Section Styling End */
 
 /* How It Works Section Styling Start */
+.service-title,
 .section-how-it-works h2,
 .section-stop-covid .container .stop-covid-right h3,
 .first-section-how-it-works .first-hiw-container h3,
-.section-contacts-us .call-to-action .row .cta-left h3,
+.section-contacts-us .container .row .cta-left h3,
+.section-choose-date .container .row .cd-left h3,
+.section-our-technician .container .row .ot-left h3,
+.section-choice .container .row .ch-left h3,
+.section-solved .container .row .sv-left h3,
 .section-our-services h3,
 .section-clients-reviews h3,
 .section-comments h3,
 .section-join-us h3,
+.section-newsletter .container h4,
 .section-our-services .container .service-card .service-card-right h4,
 .section-how-it-works .hiw-container .hiw-card .hiw-card-right h4
 {
@@ -207,36 +213,64 @@ body {
     margin-left: -6px;
     width: 98px;
 }
-.section-contacts-us .call-to-action .row .cta-left h3{
+.section-contacts-us .container .row .cta-left h3,
+.section-choose-date .container .row .cd-left h3,
+.section-our-technician .container .row .ot-left h3,
+.section-choice .container .row .ch-left h3,
+.section-solved .container .row .sv-left h3{
     color: #000;
 }
-.section-contacts-us .call-to-action .row .cta-left h4{
+.section-contacts-us .container .row .cta-left h4{
     color: var(--orange);
     font-size: 25px;
 }
-.section-contacts-us .call-to-action .row .cta-right{
+.section-contacts-us .container .row .cta-right,
+.section-choose-date .container .row .cd-right,
+.section-our-technician .container .row .ot-right,
+.section-choice .container .row .ch-right,
+.section-solved .container .row .sv-right{
     height: 600px;
     background-image: url(../images/contact-us.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-.section-contacts-us .call-to-action .row .cta-right .cta-r-btn,
-.section-contacts-us .call-to-action .row .cta-right .cta-r-btn .cta-r-btn-cont{
+.section-contacts-us .container .row .cta-right .cta-r-btn,
+.section-contacts-us .container .row .cta-right .cta-r-btn .cta-r-btn-cont,
+.section-choose-date .container .row .cd-right .cd-r-btn,
+.section-choose-date .container .row .cd-right .cd-r-btn .cd-r-btn-cont,
+.section-our-technician .container .row .ot-right .ot-r-btn,
+.section-our-technician .container .row .ot-right .ot-r-btn .ot-r-btn-cont,
+.section-choice .container .row .ch-right .ch-r-btn,
+.section-choice .container .row .ch-right .ch-r-btn .ch-r-btn-cont,
+.section-solved .container .row .sv-right .sv-r-btn,
+.section-solved .container .row .sv-right .sv-r-btn .sv-r-btn-cont{
     border-radius: 50%;
 }
-.section-contacts-us .call-to-action .row .cta-right .cta-r-btn{
-    margin-left: -40px;
+.section-contacts-us .container .row .cta-right .cta-r-btn,
+.section-choose-date .container .row .cd-right .cd-r-btn,
+.section-our-technician .container .row .ot-right .ot-r-btn,
+.section-choice .container .row .ch-right .ch-r-btn,
+.section-solved .container .row .sv-right .sv-r-btn{
+    margin-left: -110px;
     width: 200px;
     height: 200px;
     background-color: #fff;
 }
-.section-contacts-us .call-to-action .row .cta-right .cta-r-btn .cta-r-btn-cont{
+.section-contacts-us .container .row .cta-right .cta-r-btn .cta-r-btn-cont,
+.section-choose-date .container .row .cd-right .cd-r-btn .cd-r-btn-cont,
+.section-our-technician .container .row .ot-right .ot-r-btn .ot-r-btn-cont,
+.section-choice .container .row .ch-right .ch-r-btn .ch-r-btn-cont,
+.section-solved .container .row .sv-right .sv-r-btn .sv-r-btn-cont{
     width: 120px;
     height: 120px;
     background-color: var(--orange);
 }
-.section-contacts-us .call-to-action .row .cta-right .cta-r-btn .cta-r-btn-cont span{
+.section-contacts-us .container .row .cta-right .cta-r-btn .cta-r-btn-cont span,
+.section-choose-date .container .row .cd-right .cd-r-btn .cd-r-btn-cont span,
+.section-our-technician .container .row .ot-right .ot-r-btn .ot-r-btn-cont span,
+.section-choice .container .row .ch-right .ch-r-btn .ch-r-btn-cont span,
+.section-solved .container .row .sv-right .sv-r-btn .sv-r-btn-cont span{
     color: #fff;
     font-family: 'satisfy-regular';
     padding-top: 10px;
@@ -244,6 +278,197 @@ body {
     font-weight: 700;
 }
 /* Contact Section Styling End */
+
+/* Choose Date Section Styling Start */
+.section-choose-date{
+    background-color: #f6f6f6;
+    background-position: center right ;
+}
+.section-choose-date .container .row .cd-right{
+    background-image: url(../images/phone.png);
+    background-color: var(--orange);
+}
+
+.section-choose-date .container .row .cd-right .cd-r-btn{
+    background-color: #f6f6f6;
+}
+.section-choose-date .container .row .cd-left div p,
+.section-our-technician .container .row .ot-left div p,
+.section-choice .container .row .ch-left div p{
+    font-size: 20px;
+}
+/* Choose Date Section Styling End */
+
+/* Our Technician Section Styling Start */
+.section-our-technician{
+    background-color: var(--orange);
+}
+.section-our-technician .container .row .ot-right{
+    background-image: url(../images/plomber.png);
+}
+.section-our-technician .container .row .ot-right .ot-r-btn{
+    background-color: var(--orange);
+}
+/* Our Technician Section Styling End */
+
+/* Choice Section Styling Start */
+.section-choice{
+    background-color: var(--light-blue);
+}
+.section-choice .container .row .ch-right{
+    background-image: url(../images/woman.png);
+}
+.section-choice .container .row .ch-right .ch-r-btn{
+    background-color: var(--light-blue);
+}
+/* Choice Section Styling End */
+
+/* Solved Section Styling Start */
+.section-solved{
+    background-color: #f6f6f6;
+}
+.section-solved .container .row .sv-right{
+    background-image: url(../images/solved.png);
+}
+.section-solved .container .row .sv-right .sv-r-btn{
+    background-color: #f6f6f6;
+}
+/* Solved Section Styling End */
+
+/* Service Section Styling Start  */
+.service-title{
+    color: #000;
+}
+.section-service .row{
+    height: 600px;
+    max-width: 99.7vw;
+}
+.section-service .title-right,
+.section-service .title-left{
+    width: 45%;
+    background-color: #FFFFFF7F;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    top: 20px;
+    right: 0;
+
+}
+.section-service .title-left{
+    left: 0;
+    text-align: right;
+}
+.section-service .row .ssi-left,
+.section-service .row .ssp-right,
+.section-service .row .ssm-left{
+    background-image: url(../images/inf-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-service .row .ssi-right {
+    background-color: var(--light-blue);
+}
+.section-service .row .ssi-right p,
+.section-service .row .ssp-left p,
+.section-service .row .ssm-right p,
+.section-service .row .sse-left p,
+.section-service .row .ssel-right p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.section-service .row .ssp-right{
+    background-image: url(../images/plomb-bg.png);
+}
+.section-service .row .ssm-left{
+    background-image: url(../images/menu-bg.png);
+}
+.section-service .row .sse-left{
+    background-color: var(--orange);
+}
+.section-service .row .sse-right{
+    background-image: url(../images/elect-bg.png);
+}
+.section-service .row .ssel-left{
+    background-image: url(../images/electricite-bg.png);
+}
+.section-service .row .ssel-right{
+    background-color: #f6f6f6;
+}
+
+/* Service Section Styling End  */
+
+/* Newsletter Section Styling Start */
+.section-newsletter{
+    background-color: var(--light-blue);
+}
+.section-newsletter .container h4{
+    color: #fff;
+}
+.section-newsletter .container p{
+    max-width: 900px;
+    font-size: 20px;
+    margin: 0 auto;
+    color: #f6f6f6;
+}
+.section-newsletter form .form{
+    background-color: #fff;
+    height: 70px;
+    max-width: 800px;
+    border-radius: 50px;
+}
+.section-newsletter form .form .input input{
+    width: 600px;
+    height: 60px;
+    border: none;
+}
+.section-newsletter form .form .input a{
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.section-newsletter form .form .input input:focus{
+    border: none;
+    outline: none;
+}
+.section-newsletter form .offer-cont input{
+    border: 1px solid #fff;
+    background-color: var(--light-blue);
+    color: #fff;
+
+}
+.section-newsletter form .offer-cont span{
+    color: #fff;
+}
+/* Newsletter Section Styling End */
+
+/* Who-are-we Section Styling Start  */
+.bg-blue{
+    background-color: var(--light-blue);
+}
+.bg-gray{
+    background-color: #f6f6f6;
+}
+.waw-bg{
+    background: url(../images/waw-bg.png);
+    background-image: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.waw-visions{
+    background: url(../images/waw-light-bg.png);
+    background-image: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.waw-last{
+    background: url(../images/waw-last-bg.png);
+    background-image: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Who-are-we Section Styling End  */
 
 /* Footer Styling Start */
 footer{
