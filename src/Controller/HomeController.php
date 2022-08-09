@@ -11,7 +11,7 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        return $this->render('home/index.html.twig', [
+        return $this->render('front-office/home/index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
@@ -19,7 +19,7 @@ class HomeController extends AbstractController
     #[Route('/nos-services', name: 'nos_services')]
     public function showServices(): Response
     {
-        return $this->render('home/nos.services.html.twig', [
+        return $this->render('front-office/home/nos.services.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
@@ -27,7 +27,7 @@ class HomeController extends AbstractController
     #[Route('/qui-sommes-nous', name: 'qui_sommes_nous')]
     public function showWhoAreUs(): Response
     {
-        return $this->render('home/qui.sommes.nous.html.twig', [
+        return $this->render('front-office/home/qui.sommes.nous.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
@@ -35,7 +35,7 @@ class HomeController extends AbstractController
     #[Route('/contacts', name: 'nous_contacter')]
     public function showContacts(): Response
     {
-        return $this->render('home/contacts.html.twig', [
+        return $this->render('front-office/home/contacts.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
@@ -43,7 +43,7 @@ class HomeController extends AbstractController
     #[Route('/comment-ca-marche', name: 'comment_ca_marche')]
     public function showHowItWorks(): Response
     {
-        return $this->render('home/comment.ca.marche.html.twig', [
+        return $this->render('front-office/home/comment.ca.marche.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
